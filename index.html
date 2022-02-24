@@ -13,9 +13,6 @@
     <title>My portfolio | Triadi</title>
   </head>
   <body id="home">
-    <script>
-      alert("Welcome!")
-    </script>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top ">
       <div class="container">
@@ -29,16 +26,13 @@
               <a class="nav-link active" aria-current="page" href="#">Atas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">Tentang</a>
+              <a class="nav-link" href="#about">Tambahan</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#projects">Fav Card</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#card1">Tambahan</a>
+              <a class="nav-link" href="#contact">Kritik dan saran</a>
             </li>
           </ul>
         </div>
@@ -48,7 +42,7 @@
 
     <!-- jumbotron -->
     <section class="jumbotron text-center">
-      <img src="docs/img/ppfb.jpg" width="200" class="rounded-circle img-thumbnail" />
+      <img src="img/ppfb.jpg" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Triadi Suryanto Putra</h1>
       <p class="lead">LGR Player | YNTKTS</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -66,17 +60,17 @@
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
-            <h2>About Me</h2>
+            <h2>Tambahan</h2>
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
           <div class="col-md-4">
-            <p>Welcome User</p>
-            <p>Cuma coba bang, gak bagus" amat</p>
+            <p>Welcome</p>
+            <p>Cuma coba, gak bagus" amat</p>
           </div>
           <div class="col-md-4">
             <p>gaada apa apa disini</p>
-            <p>Mending Share meme</p>
+            <p>Scrool aja</p>
           </div>
         </div>
       </div>
@@ -131,7 +125,7 @@
               <img src="img/projects/Wallpaper White Nadia.png" class="card-img-top" alt=project4" />
               <div class="card-body">
                 <p align="center" class="card-text">|Nadia|</p>
-                <p align="center" class="card-text">Kuchiyose no jutsu</p>
+                <p align="center" class="card-text">Mau reset RP?</p>
               </div>
             </div>
           </div>
@@ -161,24 +155,35 @@
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col mb-6">
-            <h2>Contact me</h2>
+            <h2>Kritik dan Saran</h2>
+
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <form>
+            <form name="form-ws">
               <div class="mb-3">
                 <label for="name" class="form-label">Nama</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" />
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
                 
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" />
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
               <div class="mb-3">
                   <label for="pesan" class="form-label">Pesan yang ingin disampaikan</label>
-                  <textarea class="form-control" id="pesan" rows="3"></textarea>
+                  <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
                 </div>
-            <button type="button" class="btn btn-warning">Kirim</button>
+                <!-- Alert -->
+                <div class="alert alert-success alert-dismissible fade show d-none" role="alert">
+  <strong>Terimakasih!</strong> Pesan anda sudah tersampaikan.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+                <!-- Akhir Alert -->
+            <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+            <button class="btn btn-primary btn-load d-none" type="button" disabled>
+  <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+  Loading...
+</button>
             </form>
           </div>
         </div>
@@ -186,30 +191,6 @@
     </section>
     <!-- Akhir Contact -->
 
-<!-- navbar akhir -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-  <path fill="#e2edff" fill-opacity="1" d="M0,256L30,224C60,192,120,128,180,122.7C240,117,300,171,360,170.7C420,171,480,117,540,106.7C600,96,660,128,720,117.3C780,107,840,53,900,69.3C960,85,1020,171,1080,192C1140,213,1200,171,1260,149.3C1320,128,1380,128,1410,128L1440,128L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
-  </path>
-</svg>
-<!-- navbar akhir 2 -->
-
-<!-- card -->
-<section id="card1">
-<div class="card text-center">
-  <div class="card-header">
-    Featured
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-  <div class="card-footer text-muted">
-    2 days ago
-  </div>
-</div>
-</section>
-<!-- akhir card -->
 
     <!-- Footer -->
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -224,5 +205,30 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx9gyLHQhFKU4_RF3Lugj7PouCLuogMmFuMd_38VMD-YhbOrWRb4ik1RdB08mM6QjQC/exec'
+
+  const form = document.forms['form-ws']
+  const btnKirim = document.querySelector('.btn-kirim');
+  const btnLoad = document.querySelector('.btn-load');
+  const myAlert = document.querySelector('.alert');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    btnLoad.classList.toggle('d-none');
+    btnKirim.classList.toggle('d-none');
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        btnLoad.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        myAlert.classList.toggle('d-none');
+        //reset
+        form.reset();
+        console.log('Success!', response)
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
   </body>
 </html>
